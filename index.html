@@ -1,1 +1,112 @@
 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+<!-- NOTES
+  Week 3:  CSS frameworks, ie Bootstrap
+  Boostrap grid system:  3 column layout etc
+    <link rel="stylesheet" href="..."> to add framework
+    PBM:  padding, border, margin
+    FontAwesome for special font icons
+    Jumbotron for big billboard/picture at top
+-->
+
+    <!-- The following line will cause a mobile browser to display -->
+    <!-- your website properly: -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+  </head>
+
+  <body>
+    <!-- NEW CSS class addition -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12"> <!-- small=laptop; 12/12 units -->
+          <h1>The Daily Springfieldtonian</h1>
+          <h3>All the fake that's news to you!</h3>
+          <br>
+        </div>
+      </div>
+
+      <div class="row">
+
+      <div class="col-sm-4"> <!-- small=laptop; 4/12 of screen -->
+        <div id="topleft" class="card">
+          <div class="card-body">
+            <h3 class="card-title">New Article 1</h3>
+            <p class="card-text">Lorep ipsum, yo!</p>
+            <!-- <a id="get_forecast" href="#" class="btn btn-primary">Get Current Temperature</a> -->
+            <img class="card-img-top bg-primary img-fluid" src="http://openweathermap.org/img/w/01d.png">
+            </div>
+          </div>
+        </div>
+<!--
+        <div class="col-sm-4">
+          <h2>Your Cat Can't Drive</h2>
+          <img class="img-fluid" src="https://i.ytimg.com/vi/E3MsxbfLWdQ/hqdefault.jpg">
+          <p>
+            Once thought to be the master of everything, it turns out that
+            cats can't actually drive.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+ -->
+
+      <div class="col-sm-4">
+       <div id="topright" class="card">
+         <div class="card-body">
+           <h3 class="card-title">Sponsored by:  Malk!</h3>
+           <p class="card-text">Guaranteed "not" deadly!</p>
+           <!-- <a id="get_forecast" href="#" class="btn btn-primary">Get Current Temperature</a> -->
+           <img class="card-img-top bg-primary img-fluid" src="http://ih1.redbubble.net/image.12234290.5168/fc,550x550,baby_blue.jpg">
+           <p>
+             <br>
+             **Neither "guaranteed" nor "vitamin" imply health benefits of any sort.  Side effects include extreme
+             <a href="https://theinfosphere.org/Boneitis">Boneitis.</a>
+           </p>
+           </div>
+         </div>
+
+       </div>
+
+<!-- new row -->
+      <div class="row">
+
+        <div class="col-sm-4"> <!-- small=laptop; 4/12 of screen -->
+          <div id="bottomleft" class="card">
+            <div class="card-body">
+              <h3 class="card-title">Bottom Left Article</h3>
+                <p>
+                  For just the cost of a cup of espresso, your cat can get a customized
+                  ride the airport for that all-important weekend getaway.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+              </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4"> <!-- small=laptop; 4/12 of screen -->
+          <div id="bottomright" class="card">
+            <div class="card-body">
+              <h3>Bottom Right Article</h3>
+            <p>I don't really know what to say here but it sounded good.
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      </div>
+    </div>
+
+<!-- javascript link -->
+  <script type="text/javascript" src="java.js"> </script>
+
+  </body>
+</html>
+
