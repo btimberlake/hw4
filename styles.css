@@ -11,13 +11,13 @@
   /* height: 1px; */
   display: inline-block;
   /* max-width: 90% */
-  min-width: 100%
+  min-width: 99%
 }
 
 .menu {
   border: solid 1px white;
   display: inline-block;
-  min-width: 32%;
+  min-width: 31%;
   /* padding: 5px */
 }
 
