@@ -89,8 +89,9 @@ let updateRussia = function(data2) {
 
   $("#articleTitle2").html(rsTitle)
   $("#articleAuthor2").html(rsAuthor)
-  $("#articleBody2").html(rsDesc)
+  // $("#articleBody2").html(rsDesc)
   $("#articleURL2").attr("href", rsURL)
+  $("#articleURL2").html(rsDesc)
 }
 
 let getQuote = function(event) {
@@ -119,24 +120,26 @@ let updateQuote = function(data3) {
   $("#simChar").html(qtChar)
   $("#simImg").attr("src", qtImg)
 
-  // image resize if necessary
-  var Height = parseInt($("#simImg").css("height"),10)
-  var Width = parseInt($("#simImg").css("width"),10)
-  console.log("Height = " + Height)
-  console.log("Width = " + Width)
+// resizing unnecessary with CSS card height
 
-  // cap image height at 300px
-  var MaxHt = 300
-  if (Height > MaxHt) {
-    console.log("Image too tall")
-    ratio = Height/MaxHt
-    $("#simImg").css("height", MaxHt)
-    $("#simImg").css("width", Width/ratio)
-  }
-  Height = $("#simImg").css("height")
-  Width = $("#simImg").css("width")
-  console.log("Height = " + Height)
-  console.log("Width = " + Width)
+  // // image resize if necessary
+  // var Height = parseInt($("#simImg").css("height"),10)
+  // var Width = parseInt($("#simImg").css("width"),10)
+  // console.log("Height = " + Height)
+  // console.log("Width = " + Width)
+  //
+  // // cap image height at 300px
+  // var MaxHt = 300
+  // if (Height > MaxHt) {
+  //   console.log("Image too tall")
+  //   ratio = Height/MaxHt
+  //   $("#simImg").css("height", MaxHt)
+  //   $("#simImg").css("width", Width/ratio)
+  // }
+  // Height = $("#simImg").css("height")
+  // Width = $("#simImg").css("width")
+  // console.log("Height = " + Height)
+  // console.log("Width = " + Width)
 
 }
 
