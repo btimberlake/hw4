@@ -1,7 +1,8 @@
 
 /* for fixed card height */
-.card{
-  height: 700px;
+.card {
+  min-height: 650px;
+  max-height: 750px;
 }
 
 /* divider under title */
@@ -13,18 +14,25 @@
   min-width: 100%
 }
 
-.menu{
+.menu {
   border: solid 1px white;
   display: inline-block;
   min-width: 32%;
   /* padding: 5px */
 }
 
-.padding{
+.padding {
   /* left/right sides only */
   border: solid 1px white;
   display: inline-block;
   min-width: 1%
+}
+
+.beerPic {
+  height: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* span {

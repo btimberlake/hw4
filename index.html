@@ -15,13 +15,12 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"> </script>
 
 <!-- NOTES
-  Week 3:  CSS frameworks, ie Bootstrap
-  Boostrap grid system:  3 column layout etc
-    <link rel="stylesheet" href="..."> to add framework
-    PBM:  padding, border, margin
-    FontAwesome for special font icons
-    Jumbotron for big billboard/picture at top
--->
+  The following APIs were used:
+  - newsapi.org for latest Simpsons articles
+  - newsapi.org for random Russia Today article
+  - thesimpsonquoteapi for random Simpsons quotes+images
+  - punkapi.com (pulling Brewdog info) for Homer's beer+pic
+  - openweathermap.org for Springfield, MO weather
 
     <!-- The following line will cause a mobile browser to display -->
     <!-- your website properly: -->
@@ -37,7 +36,6 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12"> <!-- small=laptop; 12/12 units -->
-          <br>
           <h1 align="center">The Daily Springfieldtonian</h1>
           <h3 align="center">All the fake that's news to you!</h3>
           <!-- divider -->
@@ -51,6 +49,7 @@
         </div>
       </div>
 
+<!-- 1st row -->
       <div class="row">
 
       <div class="col-sm-4"> <!-- small=laptop; 4/12 of screen -->
@@ -96,11 +95,11 @@
 
        </div>
 
-<!-- new row -->
+<!-- 2nd row -->
       <div class="row">
 
       <div class="col-sm-4"> <!-- small=laptop; 4/12 of screen -->
-        <div id="bottomright" class="card">
+        <div id="midleft" class="card">
           <div class="card-body">
             <h3 class="card-title">Sponsor: Hypnotoad</h3>
               <h5 class="cart-text">All hail Hypnotoad!</h5>
@@ -110,7 +109,7 @@
       </div>
 
       <div class="col-sm-4"> <!-- small=laptop; 4/12 of screen -->
-        <div id="botmid" class="card">
+        <div id="midmid" class="card">
           <div class="card-body">
             <h3>Normal Trustful News</h3>
             <h4 id=articleTitle2>Russian News!</h4>
@@ -124,7 +123,7 @@
 
 
         <div class="col-sm-4"> <!-- small=laptop; 4/12 of screen -->
-          <div id="bottomright" class="card">
+          <div id="midright" class="card">
             <div class="card-body">
               <h3 class="card-title">Springfield Weather</h3>
               <h5 id="weathertemp" class="card-text">It is 70 degrees out today</h5>
@@ -135,6 +134,48 @@
         </div>
 
       </div>
+
+<!-- 3rd row -->
+            <div class="row">
+
+            <div class="col-sm-4"> <!-- small=laptop; 4/12 of screen -->
+              <div id="botleft" class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Homer's Beer of the Day</h4>
+                    <h5 id="beerName">Duff of course!</h5>
+                    <p id="beerDesc">Beer description</p>
+                    <p id="beerAlc">Alcohol content</p>
+                    <img class="beerPic" src="http://ecx.images-amazon.com/images/I/41qo4vRwPfL._SY300_.jpg"</img>
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4"> <!-- small=laptop; 4/12 of screen -->
+              <div id="botmid" class="card">
+                <div class="card-body">
+                  <h3>Today's Craft Idea</h3>
+                  <h4 id=articleTitle2>It'll throw you for a loop!</h4>
+                  <br></br>
+                  <img class=card-img-top bg-primary img-fluid src="https://cinemania-cdn.s3.amazonaws.com/images/2011/201303/futurama_oculto/home_sweet_goto.jpg">
+                  <br></br>
+                  <img class=card-img-top bg-primary img-fluid src="https://i.pinimg.com/736x/fb/97/18/fb9718e31fbccbc9c1346e0d41ae4121.jpg">
+              </div>
+              </div>
+            </div>
+
+
+              <div class="col-sm-4"> <!-- small=laptop; 4/12 of screen -->
+                <div id="botright" class="card">
+                  <div class="card-body">
+                    <h3 class="card-title">Crime Tips</h3>
+                    <h5>Featuring Bender</h5>
+                    <p>"Blackmail is such an ugly word. I prefer extortion. The ‘x’ makes it sound cool."</p>
+                    <img id="futurama" class="card-img-top bg-primary img-fluid" src="http://pngimg.com/uploads/futurama/futurama_PNG22.png">
+                    </div>
+                </div>
+              </div>
+
+            </div>
 
       </div>
     </div>

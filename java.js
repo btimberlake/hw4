@@ -140,6 +140,35 @@ let updateQuote = function(data3) {
   // Width = $("#simImg").css("width")
   // console.log("Height = " + Height)
   // console.log("Width = " + Width)
+}
+
+let getBeer = function(event) {
+  // Brewdog via PunkAPI
+    // https://punkapi.com/documentation/v2
+    // root:    https://api.punkapi.com/v2/
+    // random:  https://api.punkapi.com/v2/beers/random
+
+    beerURL = 'https://api.punkapi.com/v2/beers/random';
+
+    fetch(beerURL).then(convertToJSON).then(updateBeer).catch(displayError);
+}
+
+let updateBeer = function(data4) {
+  console.log("Got Beer data: ", data4)
+
+  beerName = data4[0].name
+  console.log(beerName)
+  beerTag = data4[0].tagline
+  console.log(beerTag)
+  beerABV = data4[0].abv
+  console.log(beerABV)
+  beerImg = data4[0].image_url
+  console.log(beerImg)
+
+  $("#beerName").html(beerName)
+  $("#beerDesc").html(beerTag)
+  $("#beerAlc").html("Alcohol: " + beerABV + "%")
+  $(".beerPic").attr("src", beerImg)
 
 }
 
@@ -156,3 +185,4 @@ window.onload = getWeather()
 window.onload = getNews()
 window.onload = getRussia()
 window.onload = getQuote()
+window.onload = getBeer()
