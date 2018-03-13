@@ -1,1 +1,5 @@
 
+/* for fixed card height */
+.card{
+  height: 300px;
+}

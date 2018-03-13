@@ -3,6 +3,16 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <title>Springfieldtonian</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
+    <style>
+      body { font-family: 'Lora', serif; }
+      blockquote { font-style: italic; border-left: solid 3px #CCC; padding-left: 12px; margin-top: 6px; }
+      ul:last-child { padding-bottom: 12px; }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"> </script>
 
 <!-- NOTES
   Week 3:  CSS frameworks, ie Bootstrap
@@ -26,8 +36,9 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12"> <!-- small=laptop; 12/12 units -->
-          <h1>The Daily Springfieldtonian</h1>
-          <h3>All the fake that's news to you!</h3>
+          <br>
+          <h1 align="center">The Daily Springfieldtonian</h1>
+          <h3 align="center">All the fake that's news to you!</h3>
           <br>
         </div>
       </div>
@@ -37,65 +48,80 @@
       <div class="col-sm-4"> <!-- small=laptop; 4/12 of screen -->
         <div id="topleft" class="card">
           <div class="card-body">
-            <h3 class="card-title">New Article 1</h3>
-            <p class="card-text">Lorep ipsum, yo!</p>
-            <!-- <a id="get_forecast" href="#" class="btn btn-primary">Get Current Temperature</a> -->
-            <img class="card-img-top bg-primary img-fluid" src="http://openweathermap.org/img/w/01d.png">
+            <h3 class="card-title">Quote of the Day</h3>
+            <p id="simQuote">Sample quote</p>
+            <h6 id="simChar" align="right">Nelson</h6>
+            <br>
+            <img id="simImg" class="card-img-top bg-primary img-fluid" src="https://www.fakeshoredrive.com/wp-content/uploads/2017/05/DAT_6hwXYAEjyU--e1495999988589.jpg">
             </div>
-          </div>
         </div>
-<!--
-        <div class="col-sm-4">
-          <h2>Your Cat Can't Drive</h2>
-          <img class="img-fluid" src="https://i.ytimg.com/vi/E3MsxbfLWdQ/hqdefault.jpg">
-          <p>
-            Once thought to be the master of everything, it turns out that
-            cats can't actually drive.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+      </div>
+
+
+      <div class="col-sm-4"> <!-- small=laptop; 4/12 of screen -->
+        <div id="topmid" class="card">
+          <div class="card-body">
+            <h3 id=articleTitle>Random News!</h3>
+            <p id=articleAuthor>Author</p>
+            <p id=articleBody>Title</p>
+            <a id=articleURL href="https://google.com">**May or may not involve the correct Springfield</a>
         </div>
- -->
+        </div>
+      </div>
+
 
       <div class="col-sm-4">
        <div id="topright" class="card">
          <div class="card-body">
            <h3 class="card-title">Sponsored by:  Malk!</h3>
-           <p class="card-text">Guaranteed "not" deadly!</p>
+           <h5 class="card-text">Guaranteed "not" deadly!</h5>
            <!-- <a id="get_forecast" href="#" class="btn btn-primary">Get Current Temperature</a> -->
            <img class="card-img-top bg-primary img-fluid" src="http://ih1.redbubble.net/image.12234290.5168/fc,550x550,baby_blue.jpg">
            <p>
              <br>
              **Neither "guaranteed" nor "vitamin" imply health benefits of any sort.  Side effects include extreme
-             <a href="https://theinfosphere.org/Boneitis">Boneitis.</a>
+             <a href="http://futurama.wikia.com/wiki/Boneitis">Boneitis.</a>
            </p>
            </div>
          </div>
+       </div>
 
        </div>
 
 <!-- new row -->
       <div class="row">
 
-        <div class="col-sm-4"> <!-- small=laptop; 4/12 of screen -->
-          <div id="bottomleft" class="card">
-            <div class="card-body">
-              <h3 class="card-title">Bottom Left Article</h3>
-                <p>
-                  For just the cost of a cup of espresso, your cat can get a customized
-                  ride the airport for that all-important weekend getaway.
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-              </div>
+      <div class="col-sm-4"> <!-- small=laptop; 4/12 of screen -->
+        <div id="bottomright" class="card">
+          <div class="card-body">
+            <h3 class="card-title">Sponsor: Hypnotoad</h3>
+              <h5 class="cart-text">All hail Hypnotoad!</h5>
+              <img class=card-img-top bg-primary img-fluid src="http://very-soft.com/media/products/screenshots/hypno_toad_portrait.gif">
+            </div>
           </div>
+      </div>
+
+      <div class="col-sm-4"> <!-- small=laptop; 4/12 of screen -->
+        <div id="botmid" class="card">
+          <div class="card-body">
+            <h3>Regular True News</h3>
+            <h3 id=articleTitle2>Russian News!</h3>
+            <p id=articleAuthor2>Author</p>
+            <p id=articleBody2>Title</p>
+            <a id=articleURL2 href="https://google.com">Sourceski</a>
         </div>
+        </div>
+      </div>
+
 
         <div class="col-sm-4"> <!-- small=laptop; 4/12 of screen -->
           <div id="bottomright" class="card">
             <div class="card-body">
-              <h3>Bottom Right Article</h3>
-            <p>I don't really know what to say here but it sounded good.
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+              <h3 class="card-title">Springfield Weather</h3>
+              <h5 id="weathertemp" class="card-text">It is 70 degrees out today</h5>
+              <!-- <a id="get_forecast" href="#" class="btn btn-primary">Get Current Temperature</a> -->
+              <img id="weatherpic" class="card-img-top bg-primary img-fluid" src="http://openweathermap.org/img/w/01d.png">
+              </div>
           </div>
         </div>
 
@@ -109,4 +135,3 @@
 
   </body>
 </html>
-
