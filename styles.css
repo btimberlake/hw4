@@ -40,6 +40,10 @@
   margin-right: auto;
 }
 
+h3 {
+  font-style: italic;
+}
+
 /* span {
   border: solid 5px black;
   display: inline-block;
