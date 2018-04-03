@@ -1,8 +1,38 @@
 let getWeather = function(event) {
-  // coordinates for Springfield, MO
-  let latitude = '38.2089';
-  let longitude = '-93.2923';
-  console.log("Set location to Springfield")
+  // pick from 5 Springfields
+  cityNum = Math.floor(Math.random() * 6)
+
+  // Springfield MO
+  latitude = '38.2089';
+  longitude = '-93.2923';
+  console.log(latitude)
+  console.log(longitude)
+
+  if (cityNum==0) {
+    latitude = '38.2089';
+    longitude = '-93.2923';
+    console.log("Set location to Springfield, MO")
+  } else if (cityNum==1) {
+    latitude = '42.1155';
+    longitude = '-72.5399';
+    console.log("Set location to Springfield, MA")
+  } else if (cityNum==2) {
+    latitude = '30.42908';
+    longitude = '-90.5487';
+    console.log("Set location to Springfield, LA")
+  } else if (cityNum==3) {
+    latitude = '44.0539';
+    longitude = '-122.9812';
+    console.log("Set location to Springfield, OR")
+  } else if (cityNum==4) {
+    latitude = '44.0462';
+    longitude = '-123.0233';
+    console.log("Set location to Springfield, CA")
+  } else {
+    latitude = '30.1713';
+    longitude = '-85.6121';
+    console.log("Set location to Springfield, FL")
+  }
 
   let apiKey = '5bcfde2f59c173eabef1748458723328';
   let weatherServiceURL = 'https://api.openweathermap.org/data/2.5/weather?'
@@ -27,9 +57,26 @@ let updateWeather = function(data) {
   currentWeather = data.weather[0].main
   currentHum = data.main.humidity
 
+  currentLat = data.coord.lat
+  if (currentLat>44.05) {
+    currentState = "OR"
+  } else if (currentLat>43) {
+    currentState = "CA"
+  } else if (currentLat>41) {
+    currentState = "MA"
+  } else if (currentLat>37) {
+    currentState = "MO"
+  } else if (currentLat>30.4) {
+    currentState = "LA"
+  } else {
+    currentState = "FL"
+  }
+
+  stateString = "Springfield " + currentState + " Weather"
   tempString = "It is " + currentTemp + " degrees out now."
   tempString2 = "Weather is:  " + currentWeather
   tempString3 = "Humidity is " + currentHum + "%."
+  jQuery("#weathertitle").html(stateString)
   jQuery("#weathertemp").html(tempString)
   jQuery("#weathertemp2").html(tempString2)
   jQuery("#weathertemp3").html(tempString3)
