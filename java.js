@@ -59,13 +59,13 @@ let updateNews = function(data2) {
 
   console.log("Got news data: ", data2)
   newsTitle = data2.articles[newsNum].title
-  console.log(newsTitle)
+  // console.log(newsTitle)
   newsAuthor = data2.articles[newsNum].author
-  console.log(newsAuthor)
+  // console.log(newsAuthor)
   newsDesc = data2.articles[newsNum].description
-  console.log(newsDesc)
+  // console.log(newsDesc)
   newsURL = data2.articles[newsNum].url
-  console.log(newsURL)
+  // console.log(newsURL)
 
   $("#articleTitle").html(newsTitle)
   $("#articleAuthor").html(newsAuthor)
@@ -83,15 +83,17 @@ let getRussia = function(event) {
 }
 
 let updateRussia = function(data2) {
+  let newsNum = Math.floor(Math.random() * 9)
+
   console.log("Got Russia data: ", data2)
-  rsTitle = data2.articles[0].title
-  console.log(rsTitle)
-  rsAuthor = data2.articles[0].author
-  console.log(rsAuthor)
-  rsDesc = data2.articles[0].description
-  console.log(rsDesc)
-  rsURL = data2.articles[0].url
-  console.log(rsURL)
+  rsTitle = data2.articles[newsNum].title
+  // console.log(rsTitle)
+  rsAuthor = data2.articles[newsNum].author
+  // console.log(rsAuthor)
+  rsDesc = data2.articles[newsNum].description
+  // console.log(rsDesc)
+  rsURL = data2.articles[newsNum].url
+  // console.log(rsURL)
 
   $("#articleTitle2").html(rsTitle)
   $("#articleAuthor2").html(rsAuthor)
@@ -116,11 +118,11 @@ let updateQuote = function(data3) {
   console.log("Got Quote data: ", data3)
 
   qtQuote = data3[0].quote
-  console.log(qtQuote)
+  // console.log(qtQuote)
   qtChar = "-- " + data3[0].character
-  console.log(qtChar)
+  // console.log(qtChar)
   qtImg = data3[0].image
-  console.log(qtImg)
+  // console.log(qtImg)
 
   $("#simQuote").html(qtQuote)
   $("#simChar").html(qtChar)
@@ -187,10 +189,12 @@ let convertToJSON = function(rawData) { return rawData.json(); }
 let displayError = function(error) { console.debug(error); }
 // buttons
 jQuery("#get_forecast").on("click", getWeather)
+jQuery("#get_news").on("click", getNews)
+jQuery("#get_russia").on("click", getRussia)
 jQuery("#get_beer").on("click", getBeer)
 
 //window.onload = getWeather()
 window.onload = getNews()
 window.onload = getRussia()
 window.onload = getQuote()
-window.onload = getBeer()
+//window.onload = getBeer()
