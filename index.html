@@ -1,6 +1,9 @@
 
 <!DOCTYPE html>
 <html lang="en">
+  <!-- set background -->
+  <body background="http://backgrounds.picaboo.com/download/b3/31/b3126075b98e48cfa575de15bc734a5c/SP_Gabby_Paper_Vanilla.jpg">
+
   <head>
     <meta charset="utf-8">
     <title>Springfieldtonian</title>
@@ -59,7 +62,6 @@
             <h3 class="card-title">Quote of the Day</h3>
             <p id="simQuote">Sample quote</p>
             <h6 id="simChar" align="right">Nelson</h6>
-            <br>
             <img id="simImg" class="card-img-top bg-primary img-fluid" src="https://www.fakeshoredrive.com/wp-content/uploads/2017/05/DAT_6hwXYAEjyU--e1495999988589.jpg">
             </div>
         </div>
@@ -77,24 +79,20 @@
         </div>
       </div>
 
-
-      <div class="col-sm-4">
-       <div id="topright" class="card">
-         <div class="card-body">
-           <h3 class="card-title">Sponsored by: <a href="https://www.youtube.com/watch?v=ovfM7dvFto0">Malk!</a></h3>
-           <h5 class="card-text">Guaranteed "not" deadly!</h5>
-           <!-- <a id="get_forecast" href="#" class="btn btn-primary">Get Current Temperature</a> -->
-           <img class="card-img-top bg-primary img-fluid" src="http://ih1.redbubble.net/image.12234290.5168/fc,550x550,baby_blue.jpg">
-           <p>
-             <br>
-             **Neither "guaranteed" nor "vitamin" imply
-             <a href="https://www.youtube.com/watch?v=ThhfLvR4Wo8">health benefits of any sort. </a>
-             Side effects include extreme
-             <a href="http://futurama.wikia.com/wiki/Boneitis">Boneitis.</a>
-           </p>
-           </div>
-         </div>
-       </div>
+      <div class="col-sm-4"> <!-- small=laptop; 4/12 of screen -->
+        <div id="topright" class="card">
+          <div class="card-body">
+            <h3 class="card-title">Springfield Weather</h3>
+            <h5 id="weathertemp" class="card-text">It was 70 degrees earlier</h5>
+            <h5 id="weathertemp2" class="card-text">Skies were clear</h5>
+            <h5 id="weathertemp3" class="card-text">Humidity was 50%</h5>
+            <!-- <a id="get_forecast" href="#" class="btn btn-primary">Get Current Temperature</a> -->
+            <img id="weatherpic" class="card-img-top bg-primary img-fluid" src="http://openweathermap.org/img/w/01d.png">
+            <br></br>
+            <div id="get_forecast" href="#" class="btn btn-primary">Get Current Weather</div>
+            </div>
+        </div>
+      </div>
 
        </div>
 
@@ -107,7 +105,9 @@
             <!-- <h3 class="card-title">Sponsor: Hypnotoad</h3> -->
             <h3 class="card-title">Sponsor: <a href="http://futurama.wikia.com/wiki/Hypnotoad">Hypnotoad!</a></h3>
               <a class=hypnoUrl href="https://www.youtube.com/watch?v=64Qq31ucGy0">All hail Hypnotoad!</a>
-              <img class=card-img-top bg-primary img-fluid src="http://very-soft.com/media/products/screenshots/hypno_toad_portrait.gif">
+<!--               <img class=card-img-top bg-primary img-fluid src="http://very-soft.com/media/products/screenshots/hypno_toad_portrait.gif"> -->
+<!--               <img class=card-img-top bg-primary img-fluid src="http://stream1.gifsoup.com/view5/3751597/hypnotoad-o.gif"> -->
+                   <img class=card-img-top bg-primary img-fluid src="https://www.beingpeachy.com/wp-content/uploads/2010/08/large-Hypnotoad_animated.gif">
             </div>
           </div>
       </div>
@@ -126,16 +126,23 @@
       </div>
 
 
-        <div class="col-sm-4"> <!-- small=laptop; 4/12 of screen -->
-          <div id="midright" class="card">
-            <div class="card-body">
-              <h3 class="card-title">Springfield Weather</h3>
-              <h5 id="weathertemp" class="card-text">It is 70 degrees out today</h5>
-              <!-- <a id="get_forecast" href="#" class="btn btn-primary">Get Current Temperature</a> -->
-              <img id="weatherpic" class="card-img-top bg-primary img-fluid" src="http://openweathermap.org/img/w/01d.png">
-              </div>
-          </div>
-        </div>
+        <div class="col-sm-4">
+         <div id="midright" class="card">
+           <div class="card-body">
+             <h3 class="card-title">Sponsored by: <a href="https://www.youtube.com/watch?v=ovfM7dvFto0">Malk!</a></h3>
+             <h5 class="card-text">Guaranteed "not" deadly!</h5>
+             <!-- <a id="get_forecast" href="#" class="btn btn-primary">Get Current Temperature</a> -->
+             <img class="card-img-top bg-primary img-fluid" src="http://ih1.redbubble.net/image.12234290.5168/fc,550x550,baby_blue.jpg">
+             <p>
+               <br>
+               **Neither "guaranteed" nor "vitamin" imply
+               <a href="https://www.youtube.com/watch?v=ThhfLvR4Wo8">health benefits of any sort. </a>
+               Side effects include extreme
+               <a href="http://futurama.wikia.com/wiki/Boneitis">Boneitis.</a>
+             </p>
+             </div>
+           </div>
+         </div>
 
       </div>
 
@@ -149,6 +156,9 @@
                     <h5 id="beerName">Duff of course!</h5>
                     <h7 id="beerDesc">Cold & sudsy.</h7>
                     <h7 id="beerAlc">3.5% abv.</h7>
+                    <br><br>
+                    <div id="get_beer" href="#" class="btn btn-primary">Woohoo!  Try another!</div>
+                    <br><br>
                     <img class="beerPic" src="http://ecx.images-amazon.com/images/I/41qo4vRwPfL._SY300_.jpg"</img>
                   </div>
                 </div>
@@ -162,7 +172,8 @@
                   <br></br>
                   <img class=card-img-top bg-primary img-fluid src="https://cinemania-cdn.s3.amazonaws.com/images/2011/201303/futurama_oculto/home_sweet_goto.jpg">
                   <br></br>
-                  <img class=card-img-top bg-primary img-fluid src="https://i.pinimg.com/736x/fb/97/18/fb9718e31fbccbc9c1346e0d41ae4121.jpg">
+<!--                   <img class=card-img-top bg-primary img-fluid src="https://i.pinimg.com/736x/fb/97/18/fb9718e31fbccbc9c1346e0d41ae4121.jpg"> -->
+                  <img class=card-img-top bg-primary img-fluid src="http://a.tgcdn.net/images/products/zoom/noplacelike_mat.jpg">
               </div>
               </div>
             </div>
@@ -174,7 +185,18 @@
                     <h3 class="card-title">Crime Tips</h3>
                     <h5>Featuring Bender</h5>
                     <p>"Blackmail is such an ugly word. I prefer extortion. The ‘x’ makes it sound cool."</p>
-                    <img id="futurama" class="card-img-top bg-primary img-fluid" src="http://pngimg.com/uploads/futurama/futurama_PNG22.png">
+<<<<<<< HEAD
+<<<<<<< HEAD
+                    <!-- <img id="futurama" class="card-img-top bg-primary img-fluid" src="http://pngimg.com/uploads/futurama/futurama_PNG22.png"> -->
+                    <img id="futurama" class="card-img-top bg-primary img-fluid" src="http://suptg.thisisnotatrueending.com/archive/35550882/images/1413421494357.gif">
+=======
+<!--                     <img id="futurama" class="card-img-top bg-primary img-fluid" src="http://pngimg.com/uploads/futurama/futurama_PNG22.png"> -->
+                         <img id="futurama" class="card-img-top bg-primary img-fluid" src="http://i2.kym-cdn.com/photos/images/original/000/210/041/8eb.gif">
+>>>>>>> 6e38688d92d25cf94e495b32979ec609aa5f0ecb
+=======
+<!--                     <img id="futurama" class="card-img-top bg-primary img-fluid" src="http://pngimg.com/uploads/futurama/futurama_PNG22.png"> -->
+                         <img id="futurama" class="card-img-top bg-primary img-fluid" src="http://i2.kym-cdn.com/photos/images/original/000/210/041/8eb.gif">
+>>>>>>> 6e38688d92d25cf94e495b32979ec609aa5f0ecb
                     </div>
                 </div>
               </div>

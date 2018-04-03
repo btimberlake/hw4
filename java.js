@@ -24,9 +24,15 @@ let updateWeather = function(data) {
   currentIcon = data.weather[0].icon
   currentURL = "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png"
   // console.log(data.weather[0].icon)
+  currentWeather = data.weather[0].main
+  currentHum = data.main.humidity
 
-  tempString = "It is " + currentTemp + " degrees outside."
+  tempString = "It is " + currentTemp + " degrees out now."
+  tempString2 = "Weather is:  " + currentWeather
+  tempString3 = "Humidity is " + currentHum + "%."
   jQuery("#weathertemp").html(tempString)
+  jQuery("#weathertemp2").html(tempString2)
+  jQuery("#weathertemp3").html(tempString3)
   jQuery("#weatherpic").attr("src", currentURL)
 }
 
@@ -167,7 +173,7 @@ let updateBeer = function(data4) {
 
   $("#beerName").html(beerName)
   $("#beerDesc").html(beerTag)
-  $("#beerAlc").html("Alcohol: " + beerABV + "%")
+  $("#beerAlc").html("ABV: " + beerABV + "%")
   $(".beerPic").attr("src", beerImg)
 
 }
@@ -179,9 +185,11 @@ let updateBeer = function(data4) {
 
 let convertToJSON = function(rawData) { return rawData.json(); }
 let displayError = function(error) { console.debug(error); }
-// new
-// jQuery("#topleft").on("load", getWeather)
-window.onload = getWeather()
+// buttons
+jQuery("#get_forecast").on("click", getWeather)
+jQuery("#get_beer").on("click", getBeer)
+
+//window.onload = getWeather()
 window.onload = getNews()
 window.onload = getRussia()
 window.onload = getQuote()

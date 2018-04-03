@@ -1,8 +1,10 @@
 
+
 /* for fixed card height */
 .card {
   min-height: 600px;
-  max-height: 750px;
+  max-height: 700px;
+  background-color: rgba(0,0,0,0);
 }
 
 /* divider under title */
